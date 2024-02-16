@@ -10,7 +10,7 @@ public class doctorServiceImpl implements doctorService{
 
 	@Override
 	public void doctorInformation(Doctor d) {
-		String sql = "insert into doctor (name,emailid,specialization,address,mobile,gender,note) vaues ('"+d.getName()+"','"+d.getEmailId()+"','"+d.getSpecialization()+"','"+d.getAddress()+"','"+d.getMobile()+"','"+d.getGender()+"','"+d.getNote()+"')";
+		String sql = "insert into doctor (name,emailid,specialization,address,mobile,gender,note) values ('"+d.getName()+"','"+d.getEmailId()+"','"+d.getSpecialization()+"','"+d.getAddress()+"','"+d.getMobile()+"','"+d.getGender()+"','"+d.getNote()+"')";
 				
 		try {
 			Statement st = DB.getConnection().createStatement();
